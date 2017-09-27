@@ -81,6 +81,11 @@ public class Bienvenido extends javax.swing.JFrame {
 
         botIng.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         botIng.setText("INGRESAR");
+        botIng.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botIngMouseClicked(evt);
+            }
+        });
         botIng.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botIngActionPerformed(evt);
@@ -179,6 +184,39 @@ public class Bienvenido extends javax.swing.JFrame {
       textCont.transferFocus();
     }//GEN-LAST:event_textContActionPerformed
 
+    private void botIngMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botIngMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botIngMouseClicked
+public static void main(String args[]) {
+      
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Especialidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Especialidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Especialidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Especialidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> {
+            new Bienvenido().setVisible(true);
+        });
+    }
     
    
 
@@ -197,7 +235,7 @@ public class Bienvenido extends javax.swing.JFrame {
     private javax.swing.JTextField textCont;
     private javax.swing.JTextField textUsu;
     // End of variables declaration//GEN-END:variables
-    private ControladorBienvenidoEntrar controladorEntar;
+    private final ControladorBienvenidoEntrar controladorEntar;
   
 
    

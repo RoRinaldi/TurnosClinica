@@ -140,6 +140,7 @@
         </Property>
       </AccessibilityProperties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botIngMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botIngActionPerformed"/>
       </Events>
       <Constraints>

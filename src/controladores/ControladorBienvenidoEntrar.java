@@ -21,7 +21,8 @@ import models.Persona;
  * @author Miguel Angel
  */
 public class ControladorBienvenidoEntrar implements MouseListener {
-    private JTextField pUsu, pClave;
+    private final JTextField pUsu;
+    private final JTextField pClave;
     private Persona unaPersona;
 
     public ControladorBienvenidoEntrar(JTextField pUsu, JTextField pClave) {

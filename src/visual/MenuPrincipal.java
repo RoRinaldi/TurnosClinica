@@ -120,7 +120,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_botPacientesActionPerformed
 
     private void botMenuInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuInicioActionPerformed
-            // TODO add your handling code here:
+           Bienvenido bienvenido = new Bienvenido();
+           bienvenido.setVisible(true);
+           this.setVisible(false);
+              
     }//GEN-LAST:event_botMenuInicioActionPerformed
 
     private void botProfesionalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botProfesionalesActionPerformed

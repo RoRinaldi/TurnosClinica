@@ -6,6 +6,7 @@
 package visual;
 
 import controladores.ControladorRegistrar;
+import java.awt.event.MouseListener;
 
 /**
  *
@@ -17,7 +18,8 @@ public class Registrar extends javax.swing.JFrame {
     public Registrar() {
         initComponents();
          controladorRegistro = new ControladorRegistrar(txtUsuario,txtClave,txtClave2,txtEmail);
-        botRegistrar.addMouseListener(controladorRegistro);
+        MouseListener controladorRegistrar = null;
+        botRegistrar.addMouseListener(controladorRegistrar);
     }
 
     @SuppressWarnings("unchecked")
@@ -101,10 +103,7 @@ public class Registrar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botRegistrarActionPerformed
-        Bienvenido inicio = new Bienvenido();
-        inicio.setVisible(true);
-        this.setVisible(false);
-        
+     
         
     }//GEN-LAST:event_botRegistrarActionPerformed
 
@@ -143,8 +142,6 @@ public class Registrar extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new Registrar().setVisible(true);
         });

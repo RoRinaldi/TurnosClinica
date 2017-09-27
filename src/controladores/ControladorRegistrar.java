@@ -24,6 +24,7 @@ public class ControladorRegistrar implements MouseListener{
     private final JTextField txtClave;
     private final JTextField txtClave2;
     private final JTextField txtEmail;
+    private Consulta unaPersona;
     
     public ControladorRegistrar(JTextField txtUsuario, JTextField txtClave, JTextField txtClave2, JTextField txtEmail) {
 
@@ -63,5 +64,4 @@ public class ControladorRegistrar implements MouseListener{
     @Override
     public void mouseExited(MouseEvent e) {
     }
-    
 }
